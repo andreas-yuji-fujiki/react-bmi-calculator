@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 interface descriptionProps {
     description: string
+    color: 'green' | 'yellow' | 'red'
 }
 
-export default function ResultDescription( { description } : descriptionProps){
+export default function ResultDescription( { description, color } : descriptionProps){
     return(
-        <StyledDescription>
+        <StyledDescription className={color}>
             { description }
         </StyledDescription>
     )

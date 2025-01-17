@@ -20,6 +20,7 @@ export default function BmiForm({
             <FormTitle>
                 BMI Calculator
             </FormTitle>
+
             {/* height input */}
             <FormGroup>
                 <FormLabel>
@@ -31,6 +32,7 @@ export default function BmiForm({
                     onChange={heightInputOnchange} 
                 />
             </FormGroup>
+            
             {/* height input */}
             <FormGroup>
                 <FormLabel>

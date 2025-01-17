@@ -6,25 +6,26 @@ import ResultBox from "../molecules/ResultBox";
 
 export default function BmiCalculator(){
     {/* states */}
+    let [ height , setHeight ] = useState<number | null>(null)
+    let [ weight , setWeight ] = useState<number | null>(null)
+
     const [ bmi , setBmi ] = useState<number>(0)
+
+    const [ resultVisibleState, setResultVisibleState ] = useState<boolean>(false)
     const [ description, setDescription ] = useState<string>('')
     const [ descriptionColor, setDescriptionColor ] = useState< 'green' | 'yellow' | 'red' >('green')
 
-    const [ height , setHeight ] = useState<number>(0)
-    const [ weight , setWeight ] = useState<number>(0)
-
     {/* calculate bmi function */}
     function calculateBMI(){
-        if ( height === 0 || height < 0 || weight === 0 || weight < 0) {
-            return
+        if ( height === null || height < 0 || weight === null || weight < 0) {
+            return;
         }
-
-        const dividedHeight = height / 100
-
-        const calculatedBmi = weight / (dividedHeight * dividedHeight)
-
-        setBmi(calculatedBmi)
-        createResult(calculatedBmi)
+    
+        const dividedHeight = height / 100;
+        const calculatedBmi = weight / (dividedHeight * dividedHeight);
+    
+        setBmi(calculatedBmi);
+        createResult(calculatedBmi);
     }
 
     {/* create description function */}
@@ -55,10 +56,19 @@ export default function BmiCalculator(){
         }
     }
 
+    {/* clear inputs */}
+    function clearInputs(){
+        setHeight(null)
+        setWeight(null)
+    }
+
     {/* handle submit function */}
     function handleSubmit( e: React.FormEvent ){
         e.preventDefault()
-        calculateBMI()
+
+        calculateBMI();
+        clearInputs();
+        setResultVisibleState(true);
     }
     
     return(
@@ -75,16 +85,14 @@ export default function BmiCalculator(){
             />
 
             {/* result */}
-            <ResultWrapper>
-                <ResultBox
-                    bmi={bmi}
-                    description={description}
-                    descriptionColor={descriptionColor}
-                />
-            </ResultWrapper>
+            <ResultBox
+                bmi={bmi}
+                description={description}
+                descriptionColor={descriptionColor}
+                isVisible={resultVisibleState}
+            />
         </CalculatorWrapper>
     )
 }
 
 const CalculatorWrapper = styled.div``
-const ResultWrapper = styled.div``

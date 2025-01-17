@@ -7,7 +7,7 @@ import FormSubmitBtn from "../atoms/FormSubmitBtn";
 
 import bmiFormProps from "../../types/BmiFormProps";
 
-export default function BmiForm({ 
+export default function BmiForm( { 
         heightInputValue, 
         heightInputOnchange,
 
@@ -17,6 +17,7 @@ export default function BmiForm({
 ) {
     return(
         <StyledForm>
+            {/* title */}
             <FormTitle>
                 BMI Calculator
             </FormTitle>
@@ -32,7 +33,7 @@ export default function BmiForm({
                     onChange={heightInputOnchange} 
                 />
             </FormGroup>
-            
+
             {/* height input */}
             <FormGroup>
                 <FormLabel>
@@ -44,6 +45,8 @@ export default function BmiForm({
                     onChange={weightInputOnchange} 
                 />
             </FormGroup>
+
+            {/* submit btn */}
             <FormSubmitBtn/>
         </StyledForm>
     )

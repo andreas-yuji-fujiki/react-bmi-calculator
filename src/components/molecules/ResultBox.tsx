@@ -8,7 +8,7 @@ import ResultBoxProps from "../../types/ResultBoxProps";
 
 export default function ResultBox( { bmi, description, descriptionColor, isVisible } : ResultBoxProps ){
     return(
-        <ResultWrapper className={ isVisible === true ? 'visible' : 'hidden' }>
+        <ResultWrapper className={ isVisible ? 'visible' : 'hidden' }>
             {/* BMI result display & description */}
             <ResultInfoWrapper>
                 <ResultBMI bmi={bmi} />
@@ -30,4 +30,5 @@ const ResultWrapper = styled.div`
         display: none;
     }
 `
+
 const ResultInfoWrapper = styled.div``

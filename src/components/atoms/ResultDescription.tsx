@@ -13,4 +13,15 @@ export default function ResultDescription( { description, descriptionColor } : d
     )
 }
 
-const StyledDescription = styled.p``
+const StyledDescription = styled.p`
+    /* warm colors */
+    &.green{
+        color: #27ae60;
+    }
+    &.yellow{
+        color: #f39c12;
+    }
+    &.red{
+        color: #e74c3c;
+    }
+`

@@ -14,8 +14,4 @@ const MainPageContainer = styled.main`
     max-width: 80%;
     height: 99.99dvh;
     margin: 0 auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 `

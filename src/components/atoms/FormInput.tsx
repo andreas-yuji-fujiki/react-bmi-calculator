@@ -15,6 +15,7 @@ export default function FormInput( { value, onChange, of } : FormInputProps ){
                     </IconWrapper>
                     {/* input */}
                     <StyledFormInput
+                        placeholder="Height in centimeters"
                         type="number" 
                         value={value} 
                         onChange={onChange}
@@ -28,6 +29,7 @@ export default function FormInput( { value, onChange, of } : FormInputProps ){
                     </IconWrapper>
                     {/* input */}
                     <StyledFormInput
+                        placeholder="Weight in kilograms"
                         type="number" 
                         value={value} 
                         onChange={onChange}
@@ -40,4 +42,6 @@ export default function FormInput( { value, onChange, of } : FormInputProps ){
 
 const InputWrapper = styled.div``
 const IconWrapper = styled.div``
-const StyledFormInput = styled.input``
+const StyledFormInput = styled.input`
+    color: red;
+`

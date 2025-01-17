@@ -12,11 +12,13 @@ export default function BmiForm( {
         heightInputOnchange,
 
         weightInputValue,
-        weightInputOnchange
+        weightInputOnchange,
+
+        onSubmit
     } : bmiFormProps 
 ) {
     return(
-        <StyledForm>
+        <StyledForm onSubmit={onSubmit}>
             {/* title */}
             <FormTitle>
                 BMI Calculator

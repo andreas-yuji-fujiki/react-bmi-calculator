@@ -15,7 +15,6 @@ export default function FormInput( { value, onChange, of } : FormInputProps ){
                     </IconWrapper>
                     {/* input */}
                     <StyledFormInput
-                        placeholder="Enter your height in meters" 
                         type="number" 
                         value={value} 
                         onChange={onChange}
@@ -28,8 +27,7 @@ export default function FormInput( { value, onChange, of } : FormInputProps ){
                         <GiWeight />
                     </IconWrapper>
                     {/* input */}
-                    <StyledFormInput 
-                        placeholder="Enter your weight in kilograms"
+                    <StyledFormInput
                         type="number" 
                         value={value} 
                         onChange={onChange}

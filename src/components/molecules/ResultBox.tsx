@@ -40,6 +40,6 @@ const ResultInfoWrapper = styled.div`
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 14px;
+    margin-top: 10px;
     height: 80px;
 `

@@ -10,7 +10,7 @@ const StyledAsideImage = styled.img`
     height: 425px;
     object-fit: contain;
 
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 890px){
         display: none;
     }
 `

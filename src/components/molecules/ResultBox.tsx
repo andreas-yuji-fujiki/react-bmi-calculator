@@ -6,13 +6,13 @@ import AboutBmiLink from "../atoms/AboutBmiLink";
 
 import ResultBoxProps from "../../types/ResultBoxProps";
 
-export default function ResultBox( { bmi, description } : ResultBoxProps ){
+export default function ResultBox( { bmi, description, descriptionColor } : ResultBoxProps ){
     return(
         <ResultWrapper>
             {/* BMI result display & description */}
             <ResultInfoWrapper>
                 <ResultBMI bmi={bmi} />
-                <ResultDescription description={description} />
+                <ResultDescription description={description} descriptionColor={descriptionColor}/>
             </ResultInfoWrapper>
 
             {/* about link */}

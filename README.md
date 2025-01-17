@@ -15,6 +15,9 @@ A simple and intuitive Body Mass Index (BMI) calculator built with React. Allows
 - Responsive and user-friendly interface
 
 ## How to use?
+You can access the deploy:
+`not finished yet!! come back later x-x`
+
 Feel free to clone:
 ```
 git clone https://github.com/your-username/react-imc-calculator.git

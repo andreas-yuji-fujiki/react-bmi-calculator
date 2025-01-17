@@ -35,7 +35,7 @@ export default function FormInput( { value, onChange, of } : FormInputProps ){
                         onChange={onChange}
                     />
                 </InputWrapper>
-            };
+            }
         </>
     );
 };

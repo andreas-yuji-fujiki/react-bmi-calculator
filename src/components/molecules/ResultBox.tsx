@@ -6,9 +6,9 @@ import AboutBmiLink from "../atoms/AboutBmiLink";
 
 import ResultBoxProps from "../../types/ResultBoxProps";
 
-export default function ResultBox( { bmi, description, descriptionColor } : ResultBoxProps ){
+export default function ResultBox( { bmi, description, descriptionColor, isVisible } : ResultBoxProps ){
     return(
-        <ResultWrapper>
+        <ResultWrapper className={ isVisible === true ? 'visible' : 'hidden' }>
             {/* BMI result display & description */}
             <ResultInfoWrapper>
                 <ResultBMI bmi={bmi} />
@@ -21,5 +21,13 @@ export default function ResultBox( { bmi, description, descriptionColor } : Resu
     )
 }
 
-const ResultWrapper = styled.div``
+const ResultWrapper = styled.div`
+    /* visibility states */
+    &.visible{
+        display: block;
+    }
+    &.hidden{
+        display: none;
+    }
+`
 const ResultInfoWrapper = styled.div``

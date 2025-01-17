@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import AsideImage from "../components/atoms/AsideImage";
+
+import BmiCalculator from "../components/organisms/BmiCalculator";
 
 export default function MainPage(){
     return(
         <MainPageContainer>
-            <AsideImage/>
+            <BmiCalculator/>
         </MainPageContainer>
     )
 }
@@ -12,6 +13,9 @@ export default function MainPage(){
 const MainPageContainer = styled.main`
     max-width: 80%;
     height: 99.99dvh;
-
     margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `

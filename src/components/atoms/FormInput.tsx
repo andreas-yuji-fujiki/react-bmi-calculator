@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import FormInputProps from '../../types/FormInputProps'
 
-import { FaWeight } from "react-icons/fa";
+import { GiWeight } from "react-icons/gi";
 import { GiBodyHeight } from "react-icons/gi";
 
 export default function FormInput( { value, onChange, of } : FormInputProps ){
@@ -25,7 +25,7 @@ export default function FormInput( { value, onChange, of } : FormInputProps ){
                 <InputWrapper>
                     {/* icon */}
                     <IconWrapper>
-                        <FaWeight />
+                        <GiWeight />
                     </IconWrapper>
                     {/* input */}
                     <StyledFormInput 

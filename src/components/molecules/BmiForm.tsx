@@ -54,5 +54,13 @@ export default function BmiForm( {
     )
 }
 
-const StyledForm = styled.form``
-const FormGroup = styled.div``
+const StyledForm = styled.form`
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+`
+const FormGroup = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+`

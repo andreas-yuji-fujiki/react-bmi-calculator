@@ -2,10 +2,15 @@ import styled from "styled-components"
 
 export default function AsideImage(){
     return(
-        <StyledAsideImage src="/images/aside-image.svg"/>
+        <StyledAsideImage src="/images/aside-image.png"/>
     )
 }
 
 const StyledAsideImage = styled.img`
-    width: 40dvw;
+    height: 425px;
+    object-fit: contain;
+
+    @media screen and (max-width: 750px){
+        display: none;
+    }
 `

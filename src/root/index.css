@@ -8,6 +8,8 @@
 
 body{
     background-color: #1e1e1e;
+    border-top: 3px solid #27ae60;
+    overflow: hidden;
 }
 
 button{

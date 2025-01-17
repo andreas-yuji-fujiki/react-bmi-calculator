@@ -12,7 +12,7 @@ export default function ResultBMI( { bmi } : ResultBmiProps ){
                 <MdHealthAndSafety/>
             </IconWrapper>
             <BmiDisplay>
-                { bmi }
+                BMI: { bmi }
             </BmiDisplay>
         </BmiWrapper>
     )

@@ -22,6 +22,9 @@ export default function ResultBox( { bmi, description, descriptionColor, isVisib
 }
 
 const ResultWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* visibility states */
     &.visible{
         display: block;
@@ -31,4 +34,12 @@ const ResultWrapper = styled.div`
     }
 `
 
-const ResultInfoWrapper = styled.div``
+const ResultInfoWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 14px;
+    height: 80px;
+`

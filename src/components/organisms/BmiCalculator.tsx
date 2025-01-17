@@ -86,7 +86,7 @@ export default function BmiCalculator(){
 
             {/* result */}
             <ResultBox
-                bmi={bmi}
+                bmi={Number(bmi.toFixed(2))}
                 description={description}
                 descriptionColor={descriptionColor}
                 isVisible={resultVisibleState}
@@ -95,4 +95,12 @@ export default function BmiCalculator(){
     )
 }
 
-const CalculatorWrapper = styled.div``
+const CalculatorWrapper = styled.div`
+    height: 465px;
+    width: 350px;
+    padding: 40px;
+
+    background-color: #000;
+    
+    border-radius: 5px;
+`

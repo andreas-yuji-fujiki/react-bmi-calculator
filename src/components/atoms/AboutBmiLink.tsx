@@ -12,4 +12,8 @@ export default function AboutBmiLink(){
     )
 }
 
-const AboutLink = styled.a``
+const AboutLink = styled.a`
+    width: 100%;
+    margin-left: 42px;
+    opacity: 0.7;
+`

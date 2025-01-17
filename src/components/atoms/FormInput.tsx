@@ -40,8 +40,22 @@ export default function FormInput( { value, onChange, of } : FormInputProps ){
     );
 };
 
-const InputWrapper = styled.div``
-const IconWrapper = styled.div``
+const InputWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0.1px solid #fff;
+    padding: 5px;
+`
+const IconWrapper = styled.div`
+    display: flex;
+    margin: 7px;
+`
 const StyledFormInput = styled.input`
-    color: red;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    flex: 1;
+    background-color: transparent;
 `

@@ -15,6 +15,8 @@ export default function FormInput( { of, value, onChange, onKeyDown  } : FormInp
                     </IconWrapper>
                     {/* input */}
                     <StyledFormInput
+                        min="1"
+                        max="99"
                         placeholder="Height in centimeters"
                         type="number" 
                         value={value} 
@@ -30,6 +32,8 @@ export default function FormInput( { of, value, onChange, onKeyDown  } : FormInp
                     </IconWrapper>
                     {/* input */}
                     <StyledFormInput
+                        min="1"
+                        max="99"
                         placeholder="Weight in kilograms"
                         type="number" 
                         value={value} 

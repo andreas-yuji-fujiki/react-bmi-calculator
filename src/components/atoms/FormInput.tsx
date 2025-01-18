@@ -58,4 +58,9 @@ const StyledFormInput = styled.input`
     outline: none;
     flex: 1;
     background-color: transparent;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button{
+        appearance: none;
+    }
 `

@@ -100,7 +100,21 @@ const CalculatorWrapper = styled.div`
     width: 350px;
     padding: 40px;
 
+    display: flex;
+    flex-direction: column;
+
     background-color: #000;
     
     border-radius: 5px;
+
+    @media screen and (max-width: 890px){
+        width: 100%;
+        justify-content: center;
+    }
+    @media screen and (max-width: 600px){
+        height: 100dvh;
+    }
+    @media screen and ( max-width: 350px ) {
+        justify-content: flex-start;
+    }
 `

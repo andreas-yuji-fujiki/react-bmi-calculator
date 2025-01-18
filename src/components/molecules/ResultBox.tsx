@@ -36,10 +36,13 @@ const ResultWrapper = styled.div`
 
 const ResultInfoWrapper = styled.div`
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     margin-top: 10px;
     height: 80px;
+
+    @media screen and ( max-width: 370px ){
+        gap: 20px;
+    }
 `

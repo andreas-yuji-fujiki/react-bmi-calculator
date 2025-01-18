@@ -24,11 +24,14 @@ const MainPageContainer = styled.main`
     justify-content: space-evenly;
     align-items: center;
 
-    @media screen and (max-width: 910px){
-        max-width: 100%;
-    }
     @media screen and (max-width: 1190px){
         justify-content: space-between;
         max-width: 75%;
+    }
+    @media screen and (max-width: 910px){
+        max-width: 100%;
+    }
+    @media screen and (max-width: 600px){
+        max-width: 100%;
     }
 `

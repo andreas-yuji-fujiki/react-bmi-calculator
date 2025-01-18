@@ -3,17 +3,23 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function AboutBmiLink(){
     return(
-        <AboutLink 
-            href="https://www.msdmanuals.com/professional/multimedia/table/body-mass-index-bmi" 
-            target="_blank"
-        >
-            About mass index (BMI) <FaExternalLinkAlt />
-        </AboutLink>
+        <LinkWrapper>
+            <AboutLink 
+                href="https://www.msdmanuals.com/professional/multimedia/table/body-mass-index-bmi" 
+                target="_blank"
+            >
+                About mass index (BMI) <FaExternalLinkAlt />
+            </AboutLink>
+        </LinkWrapper>
     )
 }
 
-const AboutLink = styled.a`
+const LinkWrapper = styled.div`
     width: 100%;
-    margin-left: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+const AboutLink = styled.a`
     opacity: 0.7;
 `

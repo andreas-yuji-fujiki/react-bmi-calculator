@@ -18,6 +18,17 @@ export default function ResultBMI( { bmi } : ResultBmiProps ){
     )
 }
 
-const BmiWrapper = styled.div``
+const BmiWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+
+    font-size: 20px;
+
+    @media screen and ( max-width: 370px ){
+        font-size: 16px;
+    }
+`
 const IconWrapper = styled.span``
 const BmiDisplay = styled.span``

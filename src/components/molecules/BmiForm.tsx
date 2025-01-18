@@ -10,9 +10,11 @@ import bmiFormProps from "../../types/BmiFormProps";
 export default function BmiForm( { 
         heightInputValue, 
         heightInputOnchange,
+        heightInputOnKeyDown,
 
         weightInputValue,
         weightInputOnchange,
+        weightInputOnKeyDown,
 
         onSubmit
     } : bmiFormProps 
@@ -33,6 +35,7 @@ export default function BmiForm( {
                     of="height" 
                     value={heightInputValue} 
                     onChange={heightInputOnchange} 
+                    onKeyDown={heightInputOnKeyDown}
                 />
             </FormGroup>
 
@@ -45,6 +48,7 @@ export default function BmiForm( {
                     of="weight" 
                     value={weightInputValue} 
                     onChange={weightInputOnchange} 
+                    onKeyDown={weightInputOnKeyDown}
                 />
             </FormGroup>
 

@@ -4,7 +4,7 @@ import FormInputProps from '../../types/FormInputProps'
 import { GiWeight } from "react-icons/gi";
 import { GiBodyHeight } from "react-icons/gi";
 
-export default function FormInput( { value, onChange, of } : FormInputProps ){
+export default function FormInput( { of, value, onChange, onKeyDown  } : FormInputProps ){
     return(
         <>
             {of === 'height' ?
@@ -19,6 +19,7 @@ export default function FormInput( { value, onChange, of } : FormInputProps ){
                         type="number" 
                         value={value} 
                         onChange={onChange}
+                        onKeyDown={onKeyDown}
                     />
                 </InputWrapper>
             :

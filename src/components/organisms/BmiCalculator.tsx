@@ -76,10 +76,20 @@ export default function BmiCalculator(){
             {/* form */}
             <BmiForm
                 heightInputOnchange={(e) => setHeight(Number(e.target.value))}
-                heightInputValue={String(height)}
+                heightInputValue={String(height).replace(/[\.,]/g, '')}
+                heightInputOnKeyDown={(e) => {
+                    if (e.key === '.' || e.key === ',') {
+                        e.preventDefault();
+                    }
+                }}
 
                 weightInputOnchange={(e) => setWeight(Number(e.target.value))}
-                weightInputValue={String(weight)}
+                weightInputValue={String(weight).replace(/[\.,]/g, '')}
+                weightInputOnKeyDown={(e) => {
+                    if (e.key === '.' || e.key === ',') {
+                        e.preventDefault();
+                    }
+                }}
 
                 onSubmit={handleSubmit}
             />

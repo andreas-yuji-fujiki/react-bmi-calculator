@@ -6,4 +6,6 @@ export default interface bmiFormProps {
     weightInputValue: string;
     weightInputOnchange: (event : ChangeEvent<HTMLInputElement>) => void;
     onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
+    weightInputOnKeyDown: (event: React.KeyboardEvent<HTMLInputElement>) => void;
+    heightInputOnKeyDown: (event: React.KeyboardEvent<HTMLInputElement>) => void;
 }

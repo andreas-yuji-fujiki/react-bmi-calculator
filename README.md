@@ -22,6 +22,7 @@ Feel free to clone:
 ```
 git clone https://github.com/your-username/react-imc-calculator.git
 ```
+
 Then install:
 ```
 cd react-bmi-calculator
@@ -29,6 +30,7 @@ cd react-bmi-calculator
 ```
 npm install
 ```
+
 And finally, run:
 ```
 npm run dev

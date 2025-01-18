@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import FormInputProps from '../../types/FormInputProps'
 
 import { GiWeight } from "react-icons/gi";
 import { GiBodyHeight } from "react-icons/gi";
+
+import FormInputProps from '../../types/FormInputProps'
 
 export default function FormInput( { of, value, onChange, onKeyDown  } : FormInputProps ){
     return(
@@ -15,11 +16,11 @@ export default function FormInput( { of, value, onChange, onKeyDown  } : FormInp
                     </IconWrapper>
                     {/* input */}
                     <StyledFormInput
-                        min="1"
-                        max="99"
+                        min={1}
+                        max={999}
                         placeholder="Height in centimeters"
                         type="number" 
-                        value={value} 
+                        value={value}
                         onChange={onChange}
                         onKeyDown={onKeyDown}
                     />
@@ -32,11 +33,11 @@ export default function FormInput( { of, value, onChange, onKeyDown  } : FormInp
                     </IconWrapper>
                     {/* input */}
                     <StyledFormInput
-                        min="1"
-                        max="99"
+                        min={1}
+                        max={999}
                         placeholder="Weight in kilograms"
                         type="number" 
-                        value={value} 
+                        value={value}
                         onChange={onChange}
                     />
                 </InputWrapper>

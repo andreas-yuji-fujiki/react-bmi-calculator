@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export default function AsideImage(){
     return(
-        <StyledAsideImage src="/images/aside-image.png"/>
+        <StyledAsideImage src="images/aside-image.png"/>
     )
 }
 

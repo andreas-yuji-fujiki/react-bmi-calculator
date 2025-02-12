@@ -1,4 +1,7 @@
 # 📊 React BMI Calculator
+
+## [> deploy link](https://andreas-yuji-fujiki.github.io/react-bmi-calculator/)
+
 A simple and intuitive Body Mass Index (BMI) calculator built with React. Allows users to input their weight and height to calculate their BMI and display its classification based on WHO guidelines.
 
 ## 🚀 Technologies
